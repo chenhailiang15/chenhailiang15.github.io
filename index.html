@@ -1,24 +1,87 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>OneFLOW CFD</title>
-</head>
-<body>
-    <p>Hello 大家好</p>
-    <p>我是霸都丶傲天，这是我的个人网站。 </p>
-    <p>很高兴你来到这里, 你可以在以下的网站找到我</p>
+﻿<html>
+	<head>
+		<meta charset="utf-8">
+		<style type="text/css">
+			<meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0"/>
+			body
+			{
+				font-family: arial;
+			}
+		</style>
+		<script src="package/jquery.min.js"></script>
+		<script type="text/javascript">
+			/* 鼠标点击特效 */
+			 jQuery(function () {
+				$("html").click(function(e) {
+					var a_idx = Math.floor((Math.random() * 9));
+					var a = new Array(
+						 "听党指挥", "能打胜仗", "作风优良", 
+						 "自由平等", "公正法治" ,"富强民主",  "文明和谐",   
+						 "爱国敬业", "诚信友善"
+						 );
+					var color1 = Math.floor((Math.random() * 255));
+					var color2 = Math.floor((Math.random() * 255));
+					var color3 = Math.floor((Math.random() * 255));
+		 
+					var $i = $("<span />").text(a[a_idx]);
+					a_idx = (a_idx + 1) % a.length;
+					var x = e.pageX,
+						y = e.pageY;
+					$i.css({　　　　　　
+						"z-index": 9999999999999 ,
+						"top": y - 20,
+						"left": x,
+						"position": "absolute",
+						"font-family":"mmm",
+						"fontSize":Math.floor((Math.random() * 22)+55),
+						"font-weight": "bold",
+						"color": "rgb("+color1+","+color2+","+color3+")",
+						"-webkit-user-select":"none",
+						"-moz-user-select":"none",
+						"-ms-user-select":"none",
+						"user-select":"none",
+					});
+					$("body").append($i);
+					$i.animate({
+							"top": y - 200,
+							"opacity": 0
+						},
+						1000,
+						function() {
+							$i.remove();
+						});
+				});
+			});
+		</script>
+		<title>我的专属网页</title>
 
-    <ul>
-      <li> <a href="https://www.zhihu.com/people/AJLoveChina">知乎</a> </li>
-      <li> <a href="http://hejie.nigeerhuo.com">我的博客(已经不更细了,现在在知乎写文章)</a> </li>
-    </ul>
-    <div>
-        <h1>test for site</h1>
-        <h2>LargeScale Multiphysics Scientific Simulation Environment-OneFLOW CFD</h2>
-    </div>
-    
-</body>
+	</head>
+
+	<body>
+	<div id="header" style="background-color:#FFA500;">
+		<h1 style="margin-bottom:0;">主要的网页标题</h1>
+	</div>
+	
+	<div id="container" style="width:500px background-color:#FFA500;">     
+	<p>娱乐</p>
+	
+	</div>
+	<em> "需要强调的文本" </em>
+	<strong> <br>更加需要强调的文本</strong>
+	<h1>个人简介</h1>
+
+	<p><font size="20"> 4号字体效果 Sample paragraph</font></p>
+
+	<script type="text/javascript">
+		document.write('Sample script text');
+	</script>
+
+	<img src="figure/figure.jpg" width="1000" height="1000">
+	<p style="background-color:rgba(255,255,0,0.75)">
+		有背景
+	</p>
+	<a href="https://www.baidu.com/">百度</a>
+	<font size="20"> 4号字体效果</font>
+	</body>
+
 </html>
