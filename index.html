@@ -7,6 +7,16 @@
 			{
 				font-family: arial;
 			}
+			p{
+				font-size: 50
+			}
+			a{
+				font-size: 50
+			}
+			.setbg{
+				background: url(images/chl.jpg);
+				background-repeat:no-repeat;
+			}
 		</style>
 		<script src="package/jquery.min.js"></script>
 		<script type="text/javascript">
@@ -54,37 +64,38 @@
 			});
 		</script>
 		<!--网页标题-->
-		<title>我的专属网页</title>
-
+		<title>遂简竹海</title>
+		<link rel="stylesheet" href="styles/style.css">
+		
 	</head>
 
 	<body>
-	<div id="foot" style="background-color:#FFA500;">
-		<h1 style="margin-bottom:0;">主要的网页标题</h1>
+	<div class="text" id="head" style="background-color:#FFA500; width:100%">
+		<h1 style="font-size: 55">遂简竹海</h1>
+		
 	</div>
 	
-	<div id="container" style="width:500px background-color:#FFA500;">     
-	<p>娱乐</p>
 	
+	<div style = "background-color:#aaa; height:800px; width:25%; float:left;">
+		<p>左侧栏</p>
 	</div>
-	<em> "需要强调的文本" </em>
-	<strong> <br>更加需要强调的文本</strong>
-	<h1>个人简介</h1>
+	<script  src="styles/script.js"></script>
+	<div style = "background-color:#eee; height:800px; width:25%; float:left;">
+		<p>中间左</p>
+	</div>
+	<div style = "background-color:#ccc; height:800px; width:25%; float:left;">
+		<p>中间右</p>
+	</div>
+	<div class = "setbg" style = "height:800px; width:25%; float:right;">
+		<p>右侧栏</p>
+		<!--img src="images/chl.jpg" style="width:100%"-->
+	</div>
 
-	<p><font size="20"> 4号字体效果 Sample paragraph</font></p>
-
-	<script type="text/javascript">
-		document.write('Sample script text');
-	</script>
-
-	<img src="images/chl.jpg">
-	<p style="background-color:rgba(255,255,0,0.75)">
-		有背景
-	</p>
+	<!--img src="images/chl.jpg"-->
 	
 	<a href="file/BDBA 2020.pdf"> bdba 论文</a>
 	<a href="https://www.baidu.com/">百度</a>
-	<font size="20"> 4号字体效果</font>
+	
 	</body>
 
 </html>
